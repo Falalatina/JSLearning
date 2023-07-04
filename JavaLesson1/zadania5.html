@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZADANIE NR 5</title>
+  </head>
+  <body>
+
+    <p>
+      Kawka: 5$  
+      Bagel: $3
+      Soup 9$
+    </p>
+
+    <button onclick="
+      cost += kawa;
+      cost += (kawa*tax);
+      licznikTax++;
+
+      console.log(`Koszt zakupow: $${cost/10}`);
+      console.log(`tax 10%: $${((kawa*tax)*licznikTax)/100}`);
+      ">
+      Kup kawe
+    </button>
+
+    <button onclick="
+      cost-= kawa;
+      cost-=((kawa*tax));
+    
+      console.log(`Koszt zakupow: $${cost/10}`);
+      ">
+      Odejmij z koszyka kawa
+    </button>    
+<!----------------------------------------------------->
+    <button onclick="
+      cost+= beagel;
+      cost+=(beagel*tax);
+      licznikTax++
+
+      console.log(`Koszt zakupow: $${cost/10}`);
+      console.log(`tax 10%: $${((beagel*tax)*licznikTax)/100}`);
+      ">
+      Kup bagla
+    </button>
+
+    <button onclick="
+      cost-= beagel;
+      cost-=(beagel*tax);
+
+      console.log(`Koszt zakupow: $${cost/10}`);
+      ">
+      Odejmij z koszyka bagel
+    </button>   
+<!----------------------------------------------------->     
+    <button onclick="
+      cost+= soup;
+      cost+=(soup*tax);
+      licznikTax++;
+
+      console.log(`Koszt zakupow: $${cost/10}`);
+      console.log(`tax 10%: $${((soup*tax)*licznikTax)/100}`);
+      ">
+       Kup zupe
+    </button>
+
+    <button onclick="
+      cost-= soup;
+      cost-=(soup*tax);
+      console.log(`Koszt zakupow: $${cost/10}`);
+      ">
+      Odejmij z koszyka zupa
+    </button>      
+
+    <script>
+      let licznikTax =0;
+      const kawa = 5;
+      const beagel = 3;
+      const soup = 9;
+      const tax = 10;
+      let cost = 0;
+      let name  = 'Niunia';
+      console.log(`Mopsa imie to: ${name}`);
+
+    </script>
+  </body>
+</html>
