@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Zadania 07 lekcja funkcje</title>
+
+  </head>
+  <body>
+
+    <script>
+      // function greet(name= 'there!'){
+      //   console.log(`hello ${name}`);
+      // }
+
+      // greet('Michas');
+      // greet();
+
+      function convertToFahrenheit(celcius){
+        const degrees = console.log((celcius *9/5) +32 + 'F');
+        return degrees;
+      }
+
+      function convertToCelcius (fahrnheit){
+        const degrees = console.log((fahrnheit - 32) * 5/9 + 'C');
+        return degrees;
+      }
+
+      function convertTemperature(degrees, unit){
+        if(unit === 'c'){
+          convertToCelcius(degrees);
+        } else if(unit === 'f'){
+          convertToFahrenheit(degrees);
+        }
+      }
+
+      convertTemperature(77,'c');
+      convertTemperature(25,'f');
+
+
+    </script>
+
+  </body>
+</html>
