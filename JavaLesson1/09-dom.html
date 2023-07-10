@@ -9,7 +9,19 @@
 
     <button>Hello</button>
 
+    <button class = "js-button">Second button</button>
+
     <script>
+
+      console.log(document.querySelector('button').innerHTML);
+
+      document.querySelector('button')
+        .innerHTML = 'Changed';
+
+      const buttonElement = document.querySelector('.js-button')
+       .innerHTML = 'tez changed';
+
+      console.log(buttonElement); 
 
       // console.log(document.title);
       // document.title = 'changed';
