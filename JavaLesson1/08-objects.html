@@ -34,13 +34,18 @@
             console.log('function inside');
           }
         };
-        console.log(product2);
+        console.log(product2); 
         console.log(product2['name']);
         console.log(product2['delivery-time']);
         console.log(product2.rating.count);
         product2.fun();
 
         console.log(typeof console.log);
+
+        const jsonString = JSON.stringify(product2);
+        console.log(JSON.stringify(product2));
+
+        console.log(JSON.parse(jsonString)); 
 
     </script>
 
