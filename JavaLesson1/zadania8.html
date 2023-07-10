@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zadania 08 obiekty</title>
+  </head>
+  <body>
+
+    <script>
+      const product1 = {
+        name: 'basketball',
+        price: 5095,
+        ['delivery-time']: '3 days'
+      };
+
+      let product11 = JSON.stringify(product1);
+
+      const product2 = {
+        // name: 'volleyball',
+        // price: 3095,
+        name: 'basketball',
+        price: 5095,
+        ['delivery-time']: '3 days'
+      };
+
+      let product22 = JSON.stringify(product2);
+
+      // let name1 = JSON.stringify(product1.name);
+      // let name2 = JSON.stringify(product2.name);
+      // let price1 = JSON.stringify(product1.price);
+      // let price2 = JSON.stringify(product2.price);
+
+      // console.log(price1/100);
+
+      // price1 += 500;
+
+      // console.log(price1/100);
+      // console.log(product1['delivery-time']);
+
+      // function comparePrice(product1,product2){
+      //   if(price1>price2){
+      //     console.log(name2);
+      //   }else{
+      //     console.log(name1);
+      //   }
+      // }
+
+      // comparePrice();
+
+      function isSameProduct(product11,product22){
+        if(product1.price === product2.price){
+          console.log('To ten sam produkt');
+        } else {
+          console.log('To inny produkt');
+        }
+      }
+
+      console.log('GOOd Morning'.toLowerCase());
+
+      console.log('test '.repeat(3));
+
+      isSameProduct();
+
+    </script>
+
+  </body>
+
+</html>
