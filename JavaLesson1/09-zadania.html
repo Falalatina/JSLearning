@@ -6,10 +6,31 @@
   <body>
 
     <button>9a</button>
-    <button>9b</button>
+    <button class="js-btn-9b">9b</button>
+
+    <p>9c</p>
+    <button onclick="
+    //whenClicked();
+    " class="js-btn-h">Heads</button>
+    <button onclick="
+     // whenClicked();
+    " class="js-btn-h">Tails</button>
+    <p class="js-what-chosen"></p>
 
     <script>
       console.log(document.querySelector('button'));
+
+      document.querySelector('.js-btn-9b')
+      .innerText = '9b done';
+
+      // function whenClicked()  {
+      //   const btnElementHead = document.querySelector('.js-btn-h');
+      //   const btnElementTail = document.querySelector('.js-btn-t');
+
+      //   if(btnElementHead === 'Heads')
+      //   document.querySelector('.js-what-chosen')
+      //     .innerHTML = `You chose: Heads`;
+      //   }
 
     </script>
   </body>
