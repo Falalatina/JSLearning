@@ -10,10 +10,12 @@
 
     <p>9c</p>
     <button onclick="
-    //whenClicked();
+      document.querySelector('.js-what-chosen')
+        .innerHTML = 'You choose: Heads.'
     " class="js-btn-h">Heads</button>
     <button onclick="
-     // whenClicked();
+      document.querySelector('.js-what-chosen')
+        .innerHTML = 'You choose: Tails';
     " class="js-btn-h">Tails</button>
     <p class="js-what-chosen"></p>
 
@@ -23,14 +25,7 @@
       document.querySelector('.js-btn-9b')
       .innerText = '9b done';
 
-      // function whenClicked()  {
-      //   const btnElementHead = document.querySelector('.js-btn-h');
-      //   const btnElementTail = document.querySelector('.js-btn-t');
-
-      //   if(btnElementHead === 'Heads')
-      //   document.querySelector('.js-what-chosen')
-      //     .innerHTML = `You chose: Heads`;
-      //   }
+    
 
     </script>
   </body>
