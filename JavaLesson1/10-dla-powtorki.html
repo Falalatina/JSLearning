@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10powtorka</title>
+    <style>
+      body{
+        font-size: 20px;
+      }
+
+      .untoggled-btn{
+        background-color: rgb(203, 241, 241);
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .toggled-btn{
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+  
+    </style>
+  </head>
+  <body>
+
+    <button class="mops-btn untoggled-btn" onclick="
+        isToggled('.mops-btn');
+      ">Mopsy</button>
+    <button class="kotek-btn untoggled-btn" onclick="
+        isToggled('.kotek-btn');
+    ">Kotki</button>
+    <button class="tygrys-btn untoggled-btn" onclick="
+        isToggled('.tygrys-btn');
+    ">Tygryski</button>
+
+    <script>
+
+      function isToggled(className){
+        const elementBtn = document.querySelector(className);
+        if(!elementBtn.classList.contains('toggled-btn')){
+          killTheOld();
+          elementBtn.classList.add('toggled-btn');
+        } else{
+          elementBtn.classList.remove('toggled-btn');
+        
+        }
+      }
+
+      function killTheOld(){
+        const check = document.querySelector('.toggled-btn');
+        if(check){
+          check.classList.remove('toggled-btn');
+        }
+      }
+
+    </script>
+  </body>
+</html>
