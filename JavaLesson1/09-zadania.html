@@ -19,13 +19,33 @@
     " class="js-btn-h">Tails</button>
     <p class="js-what-chosen"></p>
 
+    <p>9d</p>
+    <input class="js-input" placeholder="Enter your name" onkeydown="
+      enableEnter(event);
+    ">
+    <button onclick="
+      showName();
+    ">Submit</button>
+    <p class="js-your-name"></p>
+
     <script>
       console.log(document.querySelector('button'));
 
       document.querySelector('.js-btn-9b')
       .innerText = '9b done';
 
-    
+      let inputElement= document.querySelector('.js-input')
+
+      function showName(){
+        document.querySelector('.js-your-name')
+        .innerHTML = `Your name is: ${inputElement.value}`;
+
+      }
+      function enableEnter(event){
+        if(event.key === 'Enter'){
+        showName();
+      }
+      }
 
     </script>
   </body>
