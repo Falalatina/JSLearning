@@ -6,6 +6,7 @@
   <body>
 
     <script>
+      /*
       const array = [10, 20, 30];
       console.log(array);
       array.push(55);
@@ -31,7 +32,7 @@
         return array;
       }
       console.log(arraySwap(['klops', 1, 2, 'mops']));
-
+      */
       // for(let i=0; i<=10 ; i+=2){
       //   console.log(i);
       // }
@@ -50,7 +51,7 @@
       //   i2--
       //   console.log(i2);
       // }
-
+        /*
       const arrayOne = [1,2,3];
 
       function addOne(array){
@@ -63,7 +64,44 @@
       }
 
       console.log(
-      addOne(arrayOne));
+      addOne(arrayOne)); */
+
+/*
+      function addNum (array, number) {
+        const resultArray =[];
+        for(let i =0; i <= array.length -1; i++){
+          resultArray.push(array[i] + number)
+        }
+        return resultArray;
+      }
+      console.log
+      (
+        addNum([3,3,5],3)
+        );
+
+      function addArrays(array1,array2) {
+        const result = [];
+        for(let i=0; i<= array1.length-1; i++){
+          result.push(array1[i]+array2[i])
+        }
+        return result;
+      }   
+      console.log(
+        addArrays([1,2],[2,1])
+      );
+      */
+      function countPositive(array){
+        let num = 0;
+        for(let i=0; i<array.length ;i++){
+          if(array[i]>0){
+            num++;
+          }
+        }
+        return num;
+      }
+      console.log(
+        countPositive([1,-2,3])
+      );
 
     </script>
   </body>
