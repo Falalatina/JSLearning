@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zadania 11 part 1</title>
+  </head>
+  <body>
+
+    <script>
+      const array = [10, 20, 30];
+      console.log(array);
+      array.push(55);
+      console.log(array);
+      array.splice(2,1);
+      console.log(array);
+      array[2]= 'hello'
+      array.push('mops');
+      console.log(array);
+
+      function getLastValue(array){
+        const lastI = array.length -1;
+        console.log(array[lastI])
+      }
+      getLastValue(array);
+
+      function arraySwap(array){
+        const last = array.length - 1;
+        const firstElem = array[0];
+        const lastElem = array[last];
+        array[0] = lastElem;
+        array[last] = firstElem;
+        return array;
+      }
+      console.log(arraySwap(['klops', 1, 2, 'mops']));
+
+    </script>
+  </body>
+</html>
