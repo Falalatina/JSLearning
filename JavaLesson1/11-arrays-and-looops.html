@@ -86,11 +86,41 @@
       const [firstValue,secondValue  ] = [1,2,3];
 
       for(let i=1; i<=10;i++){
+        if(i%3 !== 0){
+          continue; //pomin
+        }
         console.log(i);
         if(i === 8){
-          break;
+          break; //zatrzymaj
         }
       }
+
+      let i =1;
+      while(i <=10){
+        if (i%3 ===0){
+          i++; //by uniknac nieskonczonej bo skipuje 1 iteracje przy continue w while
+          continue;
+        }
+        console.log(i);
+        i++;
+      }
+
+      function doubleArray(PIerwsza){ 
+        const Zdublowana =[];
+
+        for(let i=0; i < PIerwsza.length; i++){
+          const num = PIerwsza[i];
+          if (num === 0){
+            return Zdublowana;
+          }
+          Zdublowana.push(num *2);
+          
+        }
+        return Zdublowana;
+      }
+      console.log(
+      doubleArray([1,0,4]));
+      doubleArray([2,0,4]);
 
     </script>
   </body>
