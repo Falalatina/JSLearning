@@ -90,18 +90,33 @@
         addArrays([1,2],[2,1])
       );
       */
-      function countPositive(array){
-        let num = 0;
-        for(let i=0; i<array.length ;i++){
-          if(array[i]>0){
-            num++;
+      // function countPositive(array){
+      //   let num = 0;
+      //   for(let i=0; i<array.length ;i++){
+      //     if(array[i]>0){
+      //       num++;
+      //     }
+      //   }
+      //   return num;
+      // }
+      // console.log(
+      //   countPositive([1,-2,3])
+      // );
+//////////////////////////////PART 2////////////////////////////////
+
+      
+
+        function isString (arrayOfStrings,word){
+          let index = -1;
+          for(let i =0; i < arrayOfStrings.length; i++){
+            if (arrayOfStrings[i] === word){
+              index = i;
+              return index;
+            }
           }
         }
-        return num;
-      }
-      console.log(
-        countPositive([1,-2,3])
-      );
+        console.log(
+        isString(['mop','search','klops','search',1,'search'], 'klops'));
 
     </script>
   </body>
