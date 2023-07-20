@@ -122,13 +122,16 @@
         function removeEgg(foods){
           const foodArray = [];
           let licznik = 0;
-          for(let i =0; i< foods.length; i++){
-            if(foods[i] === 'egg' && licznik<2){
+          const newArray = foods.slice();
+          newArray.reverse();
+          for(let i =0; i< newArray.length; i++){
+            if(newArray[i] === 'egg' && licznik<2){
               licznik++
               continue;             
             }
-            foodArray.push(foods[i]);
-          } return foodArray;
+            
+            foodArray.push(newArray[i]);
+          } return foodArray.reverse();
         }
 
         console.log(
