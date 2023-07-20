@@ -106,17 +106,33 @@
 
       
 
-        function isString (arrayOfStrings,word){
-          let index = -1;
-          for(let i =0; i < arrayOfStrings.length; i++){
-            if (arrayOfStrings[i] === word){
-              index = i;
-              return index;
+        // function isString (arrayOfStrings,word){
+        //   let index = -1;
+        //   for(let i =0; i < arrayOfStrings.length; i++){
+        //     if (arrayOfStrings[i] === word){
+        //       index = i;
+        //       return index;
+        //     }
+        //   }
+        // }
+        // console.log(
+        // isString(['mop','search','klops','search',1,'search'], 'klops'));
+
+
+        function removeEgg(foods){
+          const foodArray = [];
+          let licznik = 0;
+          for(let i =0; i< foods.length; i++){
+            if(foods[i] === 'egg' && licznik<2){
+              licznik++
+              continue;             
             }
-          }
+            foodArray.push(foods[i]);
+          } return foodArray;
         }
+
         console.log(
-        isString(['mop','search','klops','search',1,'search'], 'klops'));
+        removeEgg(['banan','mleko', 'egg', 'salad', 'egg','egg']));
 
     </script>
   </body>
