@@ -4,14 +4,34 @@
     <title>zadania 12</title>
   </head>
   <body>
+    <!-- /*
     <button class="js-btn-hi" onclick="
       finished();
       "
     >Start</button>
+    */ -->
+
+    <button class="btn" onclick="
+    addToCart();
+    ">Add to Cart</button>
+
+    <div class="js-space"></div>
+
     <script>
 
-     
+      function addToCart(){
+        const btnElement = document.querySelector('.btn');
+        const listPlace = document.querySelector('.js-space');
 
+        listPlace.innerHTML ='Added';
+        setTimeout(function(){
+          listPlace.innerHTML ='';
+        },2000);
+
+      }
+
+     
+/*
       function finished(){
         const btnElement = document.querySelector('.js-btn-hi');
         btnElement.innerHTML ='Loading...'
@@ -23,8 +43,8 @@
             btnElement.innerHTML='Start'
           },5000);
         
-
       }
+      */
       // let add = function(index){
       //   for(let i=0; i<index; i++){
       //   console.log(2+3);
