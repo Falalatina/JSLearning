@@ -4,24 +4,43 @@
     <title>zadania 12</title>
   </head>
   <body>
+    <button class="js-btn-hi" onclick="
+      finished();
+      "
+    >Start</button>
     <script>
 
-      let add = function(index){
-        for(let i=0; i<index; i++){
-        console.log(2+3);
-        }
-      };
      
-      function runTwice(fun){
-        fun();
-        fun();
-      }
 
-      runTwice(function(){
-        console.log('12b');
-      })
+      function finished(){
+        const btnElement = document.querySelector('.js-btn-hi');
+        btnElement.innerHTML ='Loading...'
+        setTimeout(function(){
+          btnElement.innerHTML='Finish';
+        },1000);
+     
+          setTimeout(function(){
+            btnElement.innerHTML='Start'
+          },5000);
+        
+
+      }
+      // let add = function(index){
+      //   for(let i=0; i<index; i++){
+      //   console.log(2+3);
+      //   }
+      // };
+     
+      // function runTwice(fun){
+      //   fun();
+      //   fun();
+      // }
+
+      // runTwice(function(){
+      //   console.log('12b');
+      // })
       
-      runTwice(add(2));
+      // runTwice(add(2));
 
     </script>
   </body>
