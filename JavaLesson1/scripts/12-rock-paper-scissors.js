@@ -10,9 +10,10 @@ let isAutoPlaying = false;
 let intervalId;
 const AutoBtn = document.querySelector('.auto-play-btn');
 
+//const autoPlay = () => {};
 function autoPlay(){
   if(!isAutoPlaying){
-      intervalId = setInterval(function(){
+      intervalId = setInterval(() => {
       const playerMove = pickComputerMove();
       playGame(playerMove);
     },1000);
