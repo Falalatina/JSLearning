@@ -25,8 +25,10 @@ const products = [{
 }
 ];
 
+let productsHTML = ''; 
+
 products.forEach((product)=>{
-  const html = `
+  productsHTML = productsHTML + `
   <div class="product-container">
     <div class="product-image-container">
       <img class="product-image"
