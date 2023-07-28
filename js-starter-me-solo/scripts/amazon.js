@@ -1,6 +1,6 @@
 let renderHTML = '';
 
-const products.forEach(product => {
+products.forEach((product) => {
   renderHTML = renderHTML + `
   <div class="product-container">
     <div class="product-image-container">
